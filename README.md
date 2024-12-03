@@ -26,15 +26,34 @@
             font-size: 50px;
             font-weight: bold;
             margin: 0;
-            animation: rotateText 3s infinite linear;
+            animation: fadeIn 3s infinite alternate;
         }
 
-        @keyframes rotateText {
+        header p {
+            font-size: 22px;
+            margin-top: 10px;
+            animation: fadeInUp 2s infinite alternate;
+        }
+
+        @keyframes fadeIn {
             0% {
-                transform: rotateY(0deg);
+                opacity: 0.5;
+                transform: scale(1);
             }
             100% {
-                transform: rotateY(360deg);
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
 
@@ -81,14 +100,30 @@
             color: #fff;
         }
 
+        .animated-text {
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin: 20px auto;
+            animation: slideText 10s linear infinite;
+        }
+
+        @keyframes slideText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
         .product-card {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             margin-bottom: 20px;
             padding: 20px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
+            text-align: center;
             transition: transform 0.3s;
         }
 
@@ -96,15 +131,13 @@
             transform: scale(1.05);
         }
 
-        .product-card img {
-            width: 120px;
-            height: auto;
-            border-radius: 10px;
+        .product-card h3 {
+            font-size: 20px;
+            color: #fff;
         }
 
-        .product-card .details {
-            flex: 1;
-            margin-left: 20px;
+        .product-card p {
+            font-size: 16px;
             color: #fff;
         }
 
@@ -121,42 +154,43 @@
 <body>
     <header>
         <h1>أناقتك المثالية</h1>
-        <p>ملابس داخلية وخارجية - مستحضرات تجميل - جمال وأناقة المرأة</p>
+        <p>لأناقة وجمال لا يقاوم!</p>
+        <div class="animated-text">✨ تصاميم جديدة للسنتيانات والبيكيني - كوني الأجمل دائمًا! ✨</div>
     </header>
 
     <nav>
         <a href="#about">من نحن</a>
-        <a href="#products">المنتجات</a>
+        <a href="#products">منتجاتنا</a>
         <a href="#offers">العروض</a>
         <a href="#contact">اتصل بنا</a>
     </nav>
 
     <section id="about">
         <h2 class="section-title">من نحن</h2>
-        <p>نحن متجر "أناقتك المثالية"، متخصصون في تقديم أحدث الملابس الداخلية والخارجية، بالإضافة إلى مستحضرات التجميل التي تعزز من جمالك وأنوثتك. نعمل على تقديم أفضل المنتجات التي تناسب جميع الأذواق بأسعار تنافسية.</p>
+        <p>نحن متجر "أناقتك المثالية"، نسعى لجعل كل امرأة في أبهى إطلالتها. نقدم مجموعة واسعة من الملابس الداخلية مثل السنتيانات، البيكيني، وغيرها الكثير.</p>
+        <p>هدفنا هو تلبية جميع احتياجاتك من الأناقة والجمال بأعلى جودة وأفضل سعر.</p>
     </section>
 
     <section id="products">
         <h2 class="section-title">منتجاتنا</h2>
         <div class="product-card">
-            <img src="https://via.placeholder.com/120" alt="ملابس داخلية">
-            <div class="details">
-                <h3>ملابس داخلية</h3>
-                <p>تصاميم مريحة وأنيقة لجميع المناسبات.</p>
-            </div>
+            <h3>سنتيانات بأحدث التصاميم</h3>
+            <p>تشكيلات متنوعة تناسب جميع الأذواق.</p>
         </div>
         <div class="product-card">
-            <img src="https://via.placeholder.com/120" alt="فساتين">
-            <div class="details">
-                <h3>فساتين سهرة</h3>
-                <p>إطلالات جذابة بأحدث التصاميم العالمية.</p>
-            </div>
+            <h3>بيكيني صيفي</h3>
+            <p>إطلالات ساحرة تجعلك مميزة على الشاطئ.</p>
+        </div>
+        <div class="product-card">
+            <h3>لانجري فاخر</h3>
+            <p>للحصول على إطلالة مثيرة وفاخرة.</p>
         </div>
     </section>
 
     <section id="offers">
-        <h2 class="section-title">العروض</h2>
-        <div class="offer">خصم 50% على منتجاتنا المحدودة!</div>
+        <h2 class="section-title">عروضنا</h2>
+        <div class="animated-text">🎁 خصم 50% على جميع المنتجات - لا تفوتي الفرصة! 🎁</div>
+        <div class="animated-text">🌟 اشترِ 2 واحصلي على 1 مجانًا! 🌟</div>
     </section>
 
     <footer>
