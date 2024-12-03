@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة Market Link</title>
+    <title>شركة أسامة الوائلي</title>
     <style>
-        /* إعدادات الصفحة العامة */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff; /* لون أزرق فاتح */
+            background-color: #f0f8ff; /* أزرق فاتح */
             color: #333;
         }
 
-        /* تصميم الرأس */
         header {
-            background-color: #007bff; /* أزرق */
+            background-color: #0056b3; /* أزرق */
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -32,9 +30,8 @@
             margin: 10px 0 0;
         }
 
-        /* تصميم القائمة */
         nav {
-            background-color: #0056b3; /* أزرق داكن */
+            background-color: #003f7f; /* أزرق داكن */
             padding: 15px;
             text-align: center;
         }
@@ -52,7 +49,6 @@
             color: #f0f8ff; /* أزرق فاتح */
         }
 
-        /* الأقسام */
         section {
             padding: 20px;
             margin: 20px auto;
@@ -62,25 +58,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        section img {
-            width: 100%;
-            max-width: 300px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        /* خدمات وأقسام متجاوبة */
         .services {
             display: flex;
             flex-wrap: wrap;
@@ -102,9 +79,8 @@
             transform: scale(1.05);
         }
 
-        /* الفوتر */
         footer {
-            background-color: #0056b3;
+            background-color: #003f7f;
             color: white;
             text-align: center;
             padding: 10px;
@@ -119,8 +95,8 @@
 </head>
 <body>
     <header>
-        <h1>شركة Market Link</h1>
-        <p>حلول ذكية لتصريف المنتجات الزائدة وتحسين تجربة العملاء</p>
+        <h1>شركة أسامة الوائلي</h1>
+        <p>وساطة عقارية في اليمن - صعدة</p>
     </header>
     <nav>
         <a href="#about">من نحن</a>
@@ -130,7 +106,7 @@
 
     <section id="about">
         <h2>من نحن</h2>
-        <p>Market Link هي منصة مبتكرة تهدف إلى تقديم حلول ذكية لتصريف المنتجات الزائدة وتحقيق تجربة أفضل للموردين والعملاء.</p>
+        <p>شركة أسامة الوائلي تقدم خدمات الوساطة العقارية المميزة لتلبية احتياجات العملاء في مدينة صعدة واليمن بشكل عام. نسعى لتوفير أفضل الحلول العقارية بأعلى معايير الجودة.</p>
         <img src="https://via.placeholder.com/300" alt="شعار الشركة" class="animated-image">
     </section>
 
@@ -138,34 +114,33 @@
         <h2>الخدمات</h2>
         <div class="services">
             <div>
-                <h3>تصريف المنتجات</h3>
-                <p>نساعد الموردين في التخلص من المنتجات الزائدة بأساليب مبتكرة.</p>
+                <h3>بيع العقارات</h3>
+                <p>نوفر خدمات بيع الأراضي والمنازل في مختلف مناطق صعدة.</p>
             </div>
             <div>
-                <h3>حلول الدفع</h3>
-                <p>نوفر طرق دفع متعددة مثل تابي وتمارا والعملات الرقمية.</p>
+                <h3>إيجار العقارات</h3>
+                <p>نساعد في إيجاد العقارات المناسبة للإيجار بأسعار تنافسية.</p>
             </div>
             <div>
-                <h3>التسويق الإلكتروني</h3>
-                <p>تقديم حملات تسويقية لزيادة الوصول وتحقيق أهداف البيع.</p>
+                <h3>تقييم العقارات</h3>
+                <p>خدمات تقييم دقيقة لأسعار العقارات بناءً على السوق المحلي.</p>
             </div>
             <div>
-                <h3>خدمة الأوتليت</h3>
-                <p>تقديم عروض حصرية بأسعار تنافسية للعملاء.</p>
+                <h3>إدارة العقارات</h3>
+                <p>نوفر خدمات إدارة وتأجير العقارات للعملاء بسهولة.</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>اتصل بنا</h2>
-        <p>البريد الإلكتروني: info@marketlink.com</p>
-        <p>الهاتف: 123-456-789</p>
-        <p>رقم الجوال: 055555232</p>
-        <p>العنوان: الرياض، المملكة العربية السعودية</p>
+        <p>البريد الإلكتروني: info@osama-realestate.com</p>
+        <p>الهاتف: 0559801972</p>
+        <p>العنوان: صعدة، اليمن</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 جميع الحقوق محفوظة لشركة Market Link</p>
+        <p>&copy; 2024 جميع الحقوق محفوظة لشركة أسامة الوائلي</p>
     </footer>
 </body>
 </html>
