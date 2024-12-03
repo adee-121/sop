@@ -85,4 +85,68 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .services
+        .services div:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* تصميم الفوتر */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>شركة Market Link</h1>
+        <p>حلول ذكية لتصريف المنتجات الزائدة وتحسين تجربة العملاء</p>
+    </header>
+    <nav>
+        <a href="#about">من نحن</a>
+        <a href="#services">الخدمات</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <section id="about">
+        <h2>من نحن</h2>
+        <p>Market Link هي منصة إلكترونية تهدف إلى دعم الموردين المحليين من خلال تقديم حلول ذكية لتصريف المنتجات الزائدة عبر خصومات وعروض حصرية.</p>
+        <img src="https://via.placeholder.com/300" alt="من نحن" class="animated-image">
+    </section>
+
+    <section id="services">
+        <h2>الخدمات</h2>
+        <div class="services">
+            <div>
+                <h3>تصريف المنتجات الزائدة</h3>
+                <p>نساعد الموردين في تقليل خسائرهم من خلال تصريف المنتجات الزائدة بطرق فعالة.</p>
+            </div>
+            <div>
+                <h3>حلول الدفع المبتكرة</h3>
+                <p>نوفر خيارات دفع مرنة مثل تابي وتمارا والعملات الرقمية.</p>
+            </div>
+            <div>
+                <h3>تسويق العروض</h3>
+                <p>إعلانات مخصصة لزيادة المبيعات وجذب العملاء.</p>
+            </div>
+            <div>
+                <h3>خدمة الأوتليت</h3>
+                <p>بيع الاستوكات بأسعار منافسة عبر منصة إلكترونية.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>البريد الإلكتروني: info@marketlink.com</p>
+        <p>الهاتف: 123-456-789</p>
+        <p>العنوان: الرياض، المملكة العربية السعودية</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة لشركة Market Link</p>
+    </footer>
+</body>
+</html>
