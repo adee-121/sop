@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة أسامة الوائلي للعقارات</title>
+    <title>أملك عقارك</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -72,46 +72,21 @@
             animation: fadeIn 1.5s ease-in-out;
         }
 
-        .image-container {
-            text-align: center;
-            animation: zoomIn 2s ease-out;
+        .highlight {
+            color: #0056b3;
+            font-weight: bold;
         }
 
-        .image-container img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .progress-bar {
-            background-color: #f0f0f0;
-            border-radius: 20px;
-            overflow: hidden;
+        .offer {
+            background-color: #ffe6e6;
+            border: 1px solid #ff4d4d;
+            padding: 10px;
             margin: 15px 0;
-            height: 20px;
-        }
-
-        .progress-bar span {
-            display: block;
-            height: 100%;
-            background-color: #0056b3;
             text-align: center;
-            color: white;
-            font-size: 14px;
-            line-height: 20px;
-            animation: growBar 2s ease-in-out forwards;
-        }
-
-        .arrow {
-            text-align: center;
-            margin: 20px 0;
-            animation: bounce 1.5s infinite;
-        }
-
-        .arrow img {
-            width: 50px;
-            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff4d4d;
+            animation: flash 2s infinite;
         }
 
         footer {
@@ -158,97 +133,68 @@
             }
         }
 
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
+        @keyframes flash {
+            0%, 100% {
+                background-color: #ffe6e6;
             }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @keyframes growBar {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
+            50% {
+                background-color: #ffcccc;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>شركة أسامة الوائلي</h1>
-        <p>وساطة عقارية - اليمن، صعدة</p>
+        <h1>أملك عقارك</h1>
+        <p>حلمك يبدأ معنا - وساطة عقارية في اليمن</p>
     </header>
 
     <nav>
         <a href="#about">من نحن</a>
         <a href="#services">الخدمات</a>
-        <a href="#growth">مؤشرات النمو</a>
+        <a href="#offers">العروض</a>
+        <a href="#vision">رؤية اليمن</a>
         <a href="#contact">اتصل بنا</a>
     </nav>
 
-    <div class="arrow">
-        <a href="#about">
-            <img src="https://via.placeholder.com/50x50" alt="سهم للأسفل">
-        </a>
-    </div>
-
     <section id="about">
         <h2 class="section-title">من نحن</h2>
-        <p>شركة أسامة الوائلي تقدم خدمات الوساطة العقارية المتميزة لتلبية احتياجات العملاء في مدينة صعدة واليمن بشكل عام. نسعى لتوفير أفضل الحلول العقارية بأعلى معايير الجودة.</p>
-        <div class="image-container">
-            <img src="https://via.placeholder.com/300x200" alt="صورة عقار">
-        </div>
+        <p>أملك عقارك هي شركة رائدة في مجال الوساطة العقارية في اليمن. هدفنا هو تسهيل حصول العملاء على منازل أحلامهم سواء من خلال الشراء المباشر أو الأقساط المريحة.</p>
+        <p>نعمل بكل شفافية واحترافية لضمان تجربة مميزة لكل عملائنا.</p>
     </section>
 
     <section id="services">
         <h2 class="section-title">الخدمات</h2>
         <ul>
             <li>بيع وشراء العقارات.</li>
-            <li>تقييم العقارات بأعلى المعايير.</li>
-            <li>إدارة العقارات وتأجيرها.</li>
+            <li>تقديم استشارات مجانية في مجال العقارات.</li>
+            <li>توفير برامج تمويل مريحة بالتقسيط.</li>
+            <li>إدارة وتأجير العقارات.</li>
+            <li>تقديم خدمات تقييم العقارات بأعلى المعايير.</li>
         </ul>
     </section>
 
-    <section id="growth">
-        <h2 class="section-title">مؤشرات النمو</h2>
-        <p>معدلات النمو العقاري في مختلف المدن اليمنية:</p>
-        <div class="progress-bar">
-            <span style="width: 80%;">صعدة - 80%</span>
-        </div>
-        <div class="progress-bar">
-            <span style="width: 60%;">صنعاء - 60%</span>
-        </div>
-        <div class="progress-bar">
-            <span style="width: 50%;">عدن - 50%</span>
-        </div>
+    <section id="offers">
+        <h2 class="section-title">العروض والتخفيضات</h2>
+        <div class="offer">تخفيضات تصل إلى <span class="highlight">70%</span> على مجموعة مختارة من العقارات!</div>
+        <p>العروض صالحة حتى نهاية الشهر الحالي. لا تفوت فرصة الحصول على عقارك بأفضل الأسعار.</p>
+    </section>
+
+    <section id="vision">
+        <h2 class="section-title">رؤية اليمن</h2>
+        <p>رؤيتنا هي دعم التطوير العمراني في اليمن وجعل العقارات متاحة للجميع. نؤمن بأن مستقبل اليمن يعتمد على تحقيق الاستقرار السكني لكل الأسر.</p>
+        <p>انطلقت فكرة الشركة من الحاجة الملحة لتحسين جودة الحياة السكنية في اليمن وتوفير حلول مرنة تناسب الجميع.</p>
     </section>
 
     <section id="contact">
         <h2 class="section-title">اتصل بنا</h2>
         <p>رقم الجوال: 0559801972</p>
-        <p>العنوان: صعدة، اليمن</p>
+        <p>العنوان: اليمن - صنعاء</p>
+        <p>يسعدنا تواصلكم معنا للحصول على استشارة مجانية أو أي استفسارات تتعلق بخدماتنا.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 جميع الحقوق محفوظة لشركة أسامة الوائلي</p>
+        <p>&copy; 2024 جميع الحقوق محفوظة لشركة أملك عقارك</p>
     </footer>
 </body>
 </html>
