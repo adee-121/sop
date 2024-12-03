@@ -1,29 +1,43 @@
-<!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة أسامة الوائلي</title>
+    <title>شركة أسامة الوائلي للعقارات</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background-color: #f9f9f9;
             color: #333;
+            scroll-behavior: smooth;
         }
 
         header {
             background-color: #0056b3;
             color: white;
-            padding: 40px 20px;
             text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 10px 0 0;
         }
 
         nav {
             background-color: #003f7f;
             padding: 15px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -32,6 +46,11 @@
             color: white;
             font-size: 18px;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
         }
 
         section {
@@ -43,11 +62,40 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .services img, .growth img {
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
             width: 100%;
             max-width: 300px;
             border-radius: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 15px 0;
+            height: 20px;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #0056b3;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            line-height: 20px;
         }
 
         footer {
@@ -57,54 +105,60 @@
             padding: 10px;
             margin-top: 20px;
         }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>شركة أسامة الوائلي</h1>
-        <p>وساطة عقارية في اليمن - صعدة</p>
+        <p>وساطة عقارية - اليمن، صعدة</p>
     </header>
+
     <nav>
         <a href="#about">من نحن</a>
         <a href="#services">الخدمات</a>
-        <a href="#growth">معدل النمو</a>
+        <a href="#growth">مؤشرات النمو</a>
         <a href="#contact">اتصل بنا</a>
     </nav>
 
     <section id="about">
-        <h2>من نحن</h2>
-        <p>شركة أسامة الوائلي تقدم خدمات الوساطة العقارية المميزة لتلبية احتياجات العملاء في مدينة صعدة واليمن بشكل عام. نسعى لتوفير أفضل الحلول العقارية بأعلى معايير الجودة.</p>
-        <img src="https://via.placeholder.com/300" alt="شعار الشركة">
+        <h2 class="section-title">من نحن</h2>
+        <p>شركة أسامة الوائلي تقدم خدمات الوساطة العقارية المتميزة لتلبية احتياجات العملاء في مدينة صعدة واليمن بشكل عام. نسعى لتوفير أفضل الحلول العقارية بأعلى معايير الجودة.</p>
+        <div class="image-container">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAIFBgEHAP/EAEAQAAIBAwMCBAQEAwYEBgMAAAECAwAEEQUSITFBEyJRYQZxgZEUMqGxFSPBM0JS0eHwB2Kz8SREgpKioyU0Q//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EAB8RAQEAAgMBAQEBAQAAAAAAAAABAhESITFBA1FhIv/aAAwDAQACEQMRAD8Avn1e4kiMe" alt="عقار">
+        </div>
     </section>
 
     <section id="services">
-        <h2>الخدمات</h2>
-        <div>
-            <img src="https://via.placeholder.com/300" alt="صورة عقار">
-            <h3>بيع العقارات</h3>
-            <p>نوفر خدمات بيع الأراضي والمنازل في مختلف مناطق صعدة.</p>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/300" alt="صورة عقار">
-            <h3>إيجار العقارات</h3>
-            <p>نساعد في إيجاد العقارات المناسبة للإيجار بأسعار تنافسية.</p>
-        </div>
+        <h2 class="section-title">الخدمات</h2>
+        <ul>
+            <li>بيع وشراء العقارات.</li>
+            <li>تقييم العقارات بأعلى المعايير.</li>
+            <li>إدارة العقارات وتأجيرها.</li>
+        </ul>
     </section>
 
     <section id="growth">
-        <h2>معدل نمو بيع العقارات في اليمن</h2>
-        <p>تشهد اليمن زيادة ملحوظة في نشاط السوق العقاري، حيث ارتفع معدل بيع العقارات بنسبة 10% في عام 2024 مقارنة بالعام السابق.</p>
-        <ul>
-            <li>نسبة النمو في صعدة: 8%</li>
-            <li>نسبة النمو في صنعاء: 12%</li>
-            <li>نسبة النمو في عدن: 15%</li>
-        </ul>
-        <img src="https://via.placeholder.com/400" alt="معدل النمو">
+        <h2 class="section-title">مؤشرات النمو</h2>
+        <p>معدلات النمو العقاري في مختلف المدن اليمنية:</p>
+        <div class="progress-bar">
+            <span style="width: 80%;">صعدة - 80%</span>
+        </div>
+        <div class="progress-bar">
+            <span style="width: 60%;">صنعاء - 60%</span>
+        </div>
+        <div class="progress-bar">
+            <span style="width: 50%;">عدن - 50%</span>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>اتصل بنا</h2>
-        <p>الهاتف: 0559801972</p>
+        <h2 class="section-title">اتصل بنا</h2>
+        <p>رقم الجوال: 0559801972</p>
         <p>العنوان: صعدة، اليمن</p>
     </section>
 
