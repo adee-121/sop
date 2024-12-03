@@ -20,7 +20,6 @@
             background: linear-gradient(135deg, #ff69b4, #ff1493);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             color: white;
-            perspective: 1000px;
         }
 
         header h1 {
@@ -36,29 +35,6 @@
             }
             100% {
                 transform: rotateY(360deg);
-            }
-        }
-
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        .animated-text {
-            font-size: 22px;
-            font-weight: bold;
-            color: #ffebcd;
-            margin: 20px auto;
-            text-align: center;
-            animation: textGlow 2s infinite alternate;
-        }
-
-        @keyframes textGlow {
-            0% {
-                text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff1493;
-            }
-            100% {
-                text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff1493, 0 0 40px #ff69b4;
             }
         }
 
@@ -132,30 +108,6 @@
             color: #fff;
         }
 
-        .offer {
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid #ffb6c1;
-            padding: 15px;
-            margin: 20px auto;
-            color: #ffebcd;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            animation: pulse 2s infinite alternate;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                background: rgba(255, 255, 255, 0.2);
-            }
-            100% {
-                transform: scale(1.1);
-                background: rgba(255, 255, 255, 0.4);
-            }
-        }
-
         footer {
             background: #ff1493;
             color: white;
@@ -170,7 +122,6 @@
     <header>
         <h1>أناقتك المثالية</h1>
         <p>ملابس داخلية وخارجية - مستحضرات تجميل - جمال وأناقة المرأة</p>
-        <div class="animated-text">💄 تشكيلات جديدة بألوان ساحرة وأسعار لا تقاوم! 💄</div>
     </header>
 
     <nav>
@@ -183,31 +134,29 @@
     <section id="about">
         <h2 class="section-title">من نحن</h2>
         <p>نحن متجر "أناقتك المثالية"، متخصصون في تقديم أحدث الملابس الداخلية والخارجية، بالإضافة إلى مستحضرات التجميل التي تعزز من جمالك وأنوثتك. نعمل على تقديم أفضل المنتجات التي تناسب جميع الأذواق بأسعار تنافسية.</p>
-        <p>هدفنا هو أن تكوني في أبهى إطلالاتك دائمًا.</p>
     </section>
 
     <section id="products">
         <h2 class="section-title">منتجاتنا</h2>
         <div class="product-card">
-            <img src="https://via.placeholder.com/120" alt="منتج 1">
+            <img src="https://via.placeholder.com/120" alt="ملابس داخلية">
             <div class="details">
                 <h3>ملابس داخلية</h3>
-                <p>تشكيلات مريحة وأنيقة من أفضل الخامات.</p>
+                <p>تصاميم مريحة وأنيقة لجميع المناسبات.</p>
             </div>
         </div>
         <div class="product-card">
-            <img src="https://via.placeholder.com/120" alt="منتج 2">
+            <img src="https://via.placeholder.com/120" alt="فساتين">
             <div class="details">
                 <h3>فساتين سهرة</h3>
-                <p>إطلالات ساحرة تناسب كل المناسبات.</p>
+                <p>إطلالات جذابة بأحدث التصاميم العالمية.</p>
             </div>
         </div>
     </section>
 
     <section id="offers">
         <h2 class="section-title">العروض</h2>
-        <div class="offer">خصم 50% على كل مستحضرات التجميل!</div>
-        <div class="offer">احصلي على هدية مجانية عند شراء 3 قطع!</div>
+        <div class="offer">خصم 50% على منتجاتنا المحدودة!</div>
     </section>
 
     <footer>
