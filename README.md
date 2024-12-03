@@ -189,14 +189,14 @@
     <section id="products">
         <h2 class="section-title">منتجاتنا</h2>
         <div class="product-card">
-            <img src="https://via.placeholder.com/120" alt="منتج 1">
+            <img src="https://drive.google.com/uc?export=view&id="منتج 1">
             <div class="details">
                 <h3>ملابس داخلية</h3>
                 <p>تشكيلات مريحة وأنيقة من أفضل الخامات.</p>
             </div>
         </div>
         <div class="product-card">
-            <img src="https://via.placeholder.com/120" alt="منتج 2">
+            <img src="https://drive.google.com/uc?export=view&id="منتج 2">
             <div class="details">
                 <h3>فساتين سهرة</h3>
                 <p>إطلالات ساحرة تناسب كل المناسبات.</p>
