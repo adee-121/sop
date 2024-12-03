@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -24,11 +24,13 @@
         header h1 {
             font-size: 36px;
             margin: 0;
+            animation: fadeInDown 2s ease-out;
         }
 
         header p {
             font-size: 18px;
             margin: 10px 0 0;
+            animation: fadeInUp 2s ease-out;
         }
 
         nav {
@@ -67,10 +69,12 @@
             margin-bottom: 20px;
             font-size: 24px;
             font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         .image-container {
             text-align: center;
+            animation: zoomIn 2s ease-out;
         }
 
         .image-container img {
@@ -96,6 +100,18 @@
             color: white;
             font-size: 14px;
             line-height: 20px;
+            animation: growBar 2s ease-in-out forwards;
+        }
+
+        .arrow {
+            text-align: center;
+            margin: 20px 0;
+            animation: bounce 1.5s infinite;
+        }
+
+        .arrow img {
+            width: 50px;
+            cursor: pointer;
         }
 
         footer {
@@ -109,6 +125,69 @@
         footer p {
             margin: 0;
             font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes growBar {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
         }
     </style>
 </head>
@@ -125,11 +204,17 @@
         <a href="#contact">اتصل بنا</a>
     </nav>
 
+    <div class="arrow">
+        <a href="#about">
+            <img src="https://via.placeholder.com/50x50" alt="سهم للأسفل">
+        </a>
+    </div>
+
     <section id="about">
         <h2 class="section-title">من نحن</h2>
         <p>شركة أسامة الوائلي تقدم خدمات الوساطة العقارية المتميزة لتلبية احتياجات العملاء في مدينة صعدة واليمن بشكل عام. نسعى لتوفير أفضل الحلول العقارية بأعلى معايير الجودة.</p>
         <div class="image-container">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAIFBgEHAP/EAEAQAAIBAwMCBAQEAwYEBgMAAAECAwAEEQUSITFBEyJRYQZxgZEUMqGxFSPBM0JS0eHwB2Kz8SREgpKioyU0Q//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EAB8RAQEAAgMBAQEBAQAAAAAAAAABAhESITFBA1FhIv/aAAwDAQACEQMRAD8Avn1e4kiMe" alt="عقار">
+            <img src="https://via.placeholder.com/300x200" alt="صورة عقار">
         </div>
     </section>
 
