@@ -1,207 +1,217 @@
-<!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أناقتك</title>
+    <title>أناقتك المثالية</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Cairo", sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffe4e1;
-            color: #333;
-            scroll-behavior: smooth;
+            background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+            color: white;
+            overflow-x: hidden;
         }
 
         header {
-            background-color: #ff69b4;
-            color: white;
             text-align: center;
-            padding: 40px 20px;
-            overflow: hidden;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            color: white;
+            perspective: 1000px;
         }
 
         header h1 {
-            font-size: 36px;
+            font-size: 50px;
+            font-weight: bold;
             margin: 0;
-            animation: fadeInDown 2s ease-out;
+            animation: rotateText 3s infinite linear;
+        }
+
+        @keyframes rotateText {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
         }
 
         header p {
             font-size: 18px;
-            margin: 10px 0 0;
-            animation: fadeInUp 2s ease-out;
+            margin-top: 10px;
         }
 
-        .moving-text {
-            margin: 20px auto;
-            font-size: 20px;
+        .animated-text {
+            font-size: 22px;
             font-weight: bold;
-            color: #fff;
+            color: #ffebcd;
+            margin: 20px auto;
             text-align: center;
-            background: #ff1493;
-            padding: 10px;
-            animation: moveText 10s linear infinite;
+            animation: textGlow 2s infinite alternate;
         }
 
-        @keyframes moveText {
+        @keyframes textGlow {
             0% {
-                transform: translateX(100%);
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff1493;
             }
             100% {
-                transform: translateX(-100%);
+                text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff1493, 0 0 40px #ff69b4;
             }
         }
 
         nav {
-            background-color: #ff1493;
-            padding: 15px;
-            text-align: center;
+            background: #ff1493;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
 
         nav a {
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             color: white;
             font-size: 18px;
             font-weight: bold;
-            transition: color 0.3s;
+            transition: transform 0.2s, color 0.3s;
         }
 
         nav a:hover {
-            color: #ffd1dc;
+            color: #ffb6c1;
+            transform: scale(1.1);
         }
 
         section {
-            padding: 20px;
-            margin: 20px auto;
+            padding: 40px 20px;
+            margin: 30px auto;
             max-width: 900px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
         .section-title {
             text-align: center;
             margin-bottom: 20px;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
-            color: #ff69b4;
+            color: #fff;
+        }
+
+        .product-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-card .details {
+            flex: 1;
+            margin-left: 20px;
+            color: #fff;
         }
 
         .offer {
-            background-color: #ffe4e1;
-            border: 1px solid #ff69b4;
-            padding: 10px;
-            margin: 15px 0;
             text-align: center;
             font-size: 20px;
             font-weight: bold;
-            color: #ff69b4;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid #ffb6c1;
+            padding: 15px;
+            margin: 20px auto;
+            color: #ffebcd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                background: rgba(255, 255, 255, 0.2);
+            }
+            100% {
+                transform: scale(1.1);
+                background: rgba(255, 255, 255, 0.4);
+            }
         }
 
         footer {
-            background-color: #ff69b4;
+            background: #ff1493;
             color: white;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
+            padding: 20px 0;
+            margin-top: 30px;
             font-size: 14px;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>أناقتك</h1>
-        <p>ملابس وميك أب - مصر، أم الدنيا، القاهرة</p>
-        <div class="moving-text">
-            💄 أحدث مستحضرات التجميل بألوان ساحرة وجذابة!
-        </div>
-        <div class="moving-text">
-            👗 تشكيلات ملابس جديدة لكل المناسبات بأسعار تنافسية.
-        </div>
-        <div class="moving-text">
-            ✨ ابدأ رحلتك نحو الأناقة مع أناقتك.
-        </div>
+        <h1>أناقتك المثالية</h1>
+        <p>ملابس داخلية وخارجية - مستحضرات تجميل - جمال وأناقة المرأة</p>
+        <div class="animated-text">💄 تشكيلات جديدة بألوان ساحرة وأسعار لا تقاوم! 💄</div>
     </header>
 
     <nav>
         <a href="#about">من نحن</a>
-        <a href="#services">الخدمات</a>
+        <a href="#products">المنتجات</a>
         <a href="#offers">العروض</a>
-        <a href="#vision">رؤية</a>
         <a href="#contact">اتصل بنا</a>
     </nav>
 
     <section id="about">
         <h2 class="section-title">من نحن</h2>
-        <p>أناقتك هو متجر مميز متخصص في تقديم أحدث الملابس ومستحضرات التجميل، حيث نسعى لإبراز جمالك وأناقتك. نعمل مع أفضل الخبراء، مثل الأستاذة مي، لتقديم تجربة تسوق فريدة.</p>
-        <p>هدفنا هو تلبية كافة احتياجاتك من الموضة والجمال بأفضل الأسعار وأعلى جودة.</p>
+        <p>نحن متجر "أناقتك المثالية"، متخصصون في تقديم أحدث الملابس الداخلية والخارجية، بالإضافة إلى مستحضرات التجميل التي تعزز من جمالك وأنوثتك. نعمل على تقديم أفضل المنتجات التي تناسب جميع الأذواق بأسعار تنافسية.</p>
+        <p>هدفنا هو أن تكوني في أبهى إطلالاتك دائمًا.</p>
     </section>
 
-    <section id="services">
-        <h2 class="section-title">الخدمات</h2>
-        <ul>
-            <li>بيع تشكيلات متنوعة من الملابس النسائية والرجالية.</li>
-            <li>تقديم مستحضرات التجميل الأصلية والعالمية.</li>
-            <li>استشارات مجانية حول الموضة والجمال.</li>
-            <li>خدمات شحن سريع إلى جميع أنحاء مصر.</li>
-            <li>عروض حصرية على الملابس والميك أب للمناسبات الخاصة.</li>
-        </ul>
+    <section id="products">
+        <h2 class="section-title">منتجاتنا</h2>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/120" alt="منتج 1">
+            <div class="details">
+                <h3>ملابس داخلية</h3>
+                <p>تشكيلات مريحة وأنيقة من أفضل الخامات.</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/120" alt="منتج 2">
+            <div class="details">
+                <h3>فساتين سهرة</h3>
+                <p>إطلالات ساحرة تناسب كل المناسبات.</p>
+            </div>
+        </div>
     </section>
 
     <section id="offers">
-        <h2 class="section-title">العروض والتخفيضات</h2>
-        <div class="offer">💝 احصل على خصم يصل إلى <strong>50%</strong> على مستحضرات التجميل!</div>
-        <div class="offer">🎁 اشترِ 3 قطع من الملابس واحصل على الرابعة مجانًا!</div>
-        <p>لا تفوت هذه العروض المميزة، تسوق الآن واحصل على أفضل المنتجات بأسعار لا تقاوم.</p>
-    </section>
-
-    <section id="vision">
-        <h2 class="section-title">رؤيتنا</h2>
-        <p>نحن في "أناقتك" نسعى لأن نكون الوجهة الأولى لكل سيدة تبحث عن الجمال والأناقة. نؤمن بأن الأناقة ليست مجرد مظهر، بل أسلوب حياة.</p>
-        <p>رؤيتنا هي تمكين كل امرأة من التعبير عن نفسها بثقة وجمال من خلال منتجاتنا عالية الجودة.</p>
-    </section>
-
-    <section id="contact">
-        <h2 class="section-title">اتصل بنا</h2>
-        <p>رقم الجوال: 0123456789</p>
-        <p>العنوان: مصر - القاهرة</p>
-        <p>يسعدنا تواصلكم معنا لأي استفسارات أو طلبات خاصة.</p>
+        <h2 class="section-title">العروض</h2>
+        <div class="offer">خصم 50% على كل مستحضرات التجميل!</div>
+        <div class="offer">احصلي على هدية مجانية عند شراء 3 قطع!</div>
     </section>
 
     <footer>
-        <p>&copy; 2024 جميع الحقوق محفوظة لمتجر أناقتك</p>
+        <p>© 2024 جميع الحقوق محفوظة - أناقتك المثالية</p>
     </footer>
 </body>
 </html>
