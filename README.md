@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,6 @@
             color: white;
             padding: 20px 10px;
             text-align: center;
-            position: relative;
         }
         header img {
             width: 120px;
@@ -28,7 +27,7 @@
         section {
             padding: 20px;
             margin: 20px auto;
-            max-width: 800px;
+            max-width: 1000px;
             background-color: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
@@ -44,24 +43,27 @@
             font-size: 14px;
         }
 
-        /* Buttons */
-        .options {
-            display: flex;
-            justify-content: center;
+        /* Services Boxes */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
             margin-top: 20px;
         }
-        .options a {
+        .service-box {
             background-color: #004080;
             color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
             transition: 0.3s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        .options a:hover {
+        .service-box:hover {
             background-color: #0066cc;
             transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         /* Animation */
@@ -94,17 +96,13 @@
         <p>
             نؤمن بأن الاستثمار في العقارات هو استثمار في المستقبل، ونسعى دائمًا لتعزيز النمو الاقتصادي في القصيم، بما يتماشى مع رؤية المملكة 2030. هدفنا هو توفير خدمات عقارية ذات جودة عالية تبني الثقة وتحقق الرضا لعملائنا.
         </p>
-        <h2>لماذا تختارنا؟</h2>
-        <ul>
-            <li>خبرة طويلة في مجال العقارات.</li>
-            <li>معرفة متعمقة بسوق العقارات في منطقة القصيم.</li>
-            <li>تقديم خدمات شاملة تشمل البيع، الشراء، والتمليك.</li>
-            <li>التزام بالرؤية الطموحة للمملكة 2030.</li>
-        </ul>
-        <div class="options">
-            <a href="#services">خدماتنا</a>
-            <a href="#contact">تواصل معنا</a>
-            <a href="#vision2030">رؤية 2030</a>
+        <h2>خدماتنا</h2>
+        <div class="services">
+            <div class="service-box">تملّك</div>
+            <div class="service-box">استأجر</div>
+            <div class="service-box">منتهي بالتمليك</div>
+            <div class="service-box">بيع وشراء</div>
+            <div class="service-box">تخفيضات</div>
         </div>
     </section>
     <footer>
