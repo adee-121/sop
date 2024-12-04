@@ -1,0 +1,42 @@
+/* خلفية الصفحة */
+body {
+    background-color: #FAF3E0;
+    font-family: 'Arial', sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+}
+
+/* العناوين */
+h1, h2, h3 {
+    color: #8ABF8B;
+}
+
+/* النص الأساسي */
+p {
+    color: #7D7D7D;
+    line-height: 1.6;
+}
+
+/* الأزرار */
+button {
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #C89E2D;
+}
+
+/* الفوتر */
+footer {
+    background-color: #F8F8F8;
+    color: #4A4A4A;
+    text-align: center;
+    padding: 20px 0;
+}
