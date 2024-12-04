@@ -74,49 +74,61 @@
             margin-bottom: 20px;
         }
 
-        /* الخدمات */
-        .services {
+        /* مزايا الخدمة */
+        .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
         }
-        .service-card {
+        .feature {
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
             width: 300px;
             text-align: center;
-            transition: transform 0.3s;
         }
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        .service-card img {
-            width: 100%;
-            border-radius: 10px;
+        .feature img {
+            width: 80px;
             margin-bottom: 15px;
         }
-        .service-card h3 {
-            font-size: 1.5em;
-            color: #a67c52;
+
+        /* جدول الأسعار */
+        .pricing-table {
+            margin: 0 auto;
+            max-width: 600px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .pricing-table th,
+        .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+        .pricing-table th {
+            background-color: #a67c52;
+            color: #fff;
+        }
+        .pricing-table tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
 
-        /* معرض الصور */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+        /* الأسئلة الشائعة */
+        .faq-item {
+            margin-bottom: 20px;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .gallery img {
-            width: 300px;
-            border-radius: 10px;
-            transition: transform 0.3s;
+        .faq-item h3 {
+            color: #a67c52;
+            margin-bottom: 10px;
         }
-        .gallery img:hover {
-            transform: scale(1.1);
+        .faq-item p {
+            margin: 0;
         }
 
         /* الفوتر */
@@ -149,35 +161,69 @@
     </p>
 </section>
 
-<!-- الخدمات -->
-<section id="services">
-    <h2>الخدمات</h2>
-    <div class="services">
-        <div class="service-card">
-            <img src="https://via.placeholder.com/300x200" alt="مساج استرخائي">
-            <h3>مساج استرخائي</h3>
-            <p>تخفيف التوتر واستعادة النشاط.</p>
+<!-- المزايا -->
+<section id="features">
+    <h2>لماذا تختارنا؟</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/80" alt="ميزة 1">
+            <h3>احترافية عالية</h3>
+            <p>نقدم خدماتنا على يد فريق مؤهل ومدرب.</p>
         </div>
-        <div class="service-card">
-            <img src="https://via.placeholder.com/300x200" alt="مساج علاجي">
-            <h3>مساج علاجي</h3>
-            <p>حلول متخصصة لتخفيف آلام الجسم.</p>
+        <div class="feature">
+            <img src="https://via.placeholder.com/80" alt="ميزة 2">
+            <h3>خصوصية وراحة</h3>
+            <p>جلسات مساج في أجواء هادئة ومريحة.</p>
         </div>
-        <div class="service-card">
-            <img src="https://via.placeholder.com/300x200" alt="مساج رياضي">
-            <h3>مساج رياضي</h3>
-            <p>مصمم للاعبي الرياضة لتخفيف العضلات.</p>
+        <div class="feature">
+            <img src="https://via.placeholder.com/80" alt="ميزة 3">
+            <h3>أسعار مناسبة</h3>
+            <p>خيارات متعددة تناسب جميع الاحتياجات.</p>
         </div>
     </div>
 </section>
 
-<!-- معرض الصور -->
-<section id="gallery">
-    <h2>معرض الصور</h2>
-    <div class="gallery">
-        <img src="https://via.placeholder.com/300x200" alt="صورة 1">
-        <img src="https://via.placeholder.com/300x200" alt="صورة 2">
-        <img src="https://via.placeholder.com/300x200" alt="صورة 3">
+<!-- جدول الأسعار -->
+<section id="pricing">
+    <h2>الأسعار والباقات</h2>
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th>الخدمة</th>
+                <th>المدة</th>
+                <th>السعر</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>مساج استرخائي</td>
+                <td>60 دقيقة</td>
+                <td>150 ريال</td>
+            </tr>
+            <tr>
+                <td>مساج علاجي</td>
+                <td>60 دقيقة</td>
+                <td>200 ريال</td>
+            </tr>
+            <tr>
+                <td>مساج رياضي</td>
+                <td>90 دقيقة</td>
+                <td>250 ريال</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- الأسئلة الشائعة -->
+<section id="faq">
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item">
+        <h3>ما هي مواعيد العمل لديكم؟</h3>
+        <p>نعمل من الساعة 10 صباحًا حتى 10 مساءً يوميًا.</p>
+    </div>
+    <div class="faq-item">
+        <h3>هل هناك خصومات على الباقات؟</h3>
+        <p>نعم، نقدم خصومات مميزة عند حجز باقات متعددة.</p>
     </div>
 </section>
 
