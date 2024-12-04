@@ -3,158 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محل مساج جدة</title>
-    <style>
-        /* الأنماط الأساسية */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(90deg, #a67c52, #f4e3d7);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            color: #a67c52;
-        }
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        section h2 {
-            font-size: 2.5em;
-            color: #a67c52;
-            margin-bottom: 20px;
-        }
-        section p {
-            font-size: 1.2em;
-            line-height: 1.8;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .service-card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        .service-card h3 {
-            font-size: 1.5em;
-            color: #a67c52;
-            margin-bottom: 10px;
-        }
-        .service-card p {
-            font-size: 1em;
-            color: #555;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <title>الرئيسية - محل مساج جدة</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="pricing.html">الأسعار</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <h1 class="hero-title">مرحبا بك في محل مساج جدة</h1>
+        <p class="hero-description">تجربة استرخاء لا مثيل لها</p>
+        <a href="services.html" class="cta">اكتشف خدماتنا</a>
+    </header>
 
-<!-- رأسية الصفحة -->
-<header>
-    <h1>محل مساج جدة</h1>
-    <p>الراحة تبدأ هنا</p>
-</header>
-
-<!-- شريط التنقل -->
-<nav>
-    <a href="#about">من نحن</a>
-    <a href="#services">الخدمات</a>
-    <a href="#contact">اتصل بنا</a>
-</nav>
-
-<!-- من نحن -->
-<section id="about">
-    <h2>من نحن</h2>
-    <p>مرحبًا بك في محل مساج جدة، المكان المثالي للاسترخاء واستعادة الطاقة. نحن نقدم خدمات متميزة في أجواء مريحة تلبي كافة احتياجاتك.</p>
-</section>
-
-<!-- الخدمات -->
-<section id="services">
-    <h2>الخدمات</h2>
-    <div class="services">
-        <div class="service-card">
-            <h3>مساج استرخائي</h3>
-            <p>يساعد على تخفيف التوتر وإعادة الحيوية لجسمك.</p>
+    <section class="features">
+        <h2>لماذا تختارنا؟</h2>
+        <div class="feature-cards">
+            <div class="feature">
+                <h3>احترافية عالية</h3>
+                <p>يقدم فريقنا المدرب خدمات مميزة تلبي احتياجاتك.</p>
+            </div>
+            <div class="feature">
+                <h3>خصوصية وراحة</h3>
+                <p>بيئة آمنة ومريحة للحصول على أقصى استفادة.</p>
+            </div>
+            <div class="feature">
+                <h3>أسعار منافسة</h3>
+                <p>خيارات مرنة تناسب الجميع.</p>
+            </div>
         </div>
-        <div class="service-card">
-            <h3>مساج علاجي</h3>
-            <p>مصمم خصيصًا لتخفيف آلام العضلات وتحسين صحتك العامة.</p>
-        </div>
-        <div class="service-card">
-            <h3>مساج رياضي</h3>
-            <p>مثالي لتحسين الأداء الرياضي واستشفاء العضلات بعد التمارين.</p>
-        </div>
-        <div class="service-card">
-            <h3>مساج الحجر الساخن</h3>
-            <p>يجمع بين الدفء والتدليك العميق لتخفيف التشنجات.</p>
-        </div>
-        <div class="service-card">
-            <h3>مساج القدم</h3>
-            <p>تحفيز نقاط الضغط في القدم لتحسين صحة الجسم بالكامل.</p>
-        </div>
-        <div class="service-card">
-            <h3>مساج للحوامل</h3>
-            <p>جلسات مخصصة لتخفيف الآلام أثناء فترة الحمل.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- اتصل بنا -->
-<section id="contact">
-    <h2>اتصل بنا</h2>
-    <p>نحن هنا لتلبية احتياجاتك. تواصل معنا عبر الوسائل التالية:</p>
-    <p><strong>الهاتف:</strong> 050XXXXXXX</p>
-    <p><strong>واتساب:</strong> 050XXXXXXX</p>
-    <p><strong>البريد الإلكتروني:</strong> info@massagejeddah.com</p>
-    <p><strong>ساعات العمل:</strong> يوميًا من 10 صباحًا إلى 10 مساءً.</p>
-</section>
-
-<!-- الفوتر -->
-<footer>
-    <p>&copy; 2024 محل مساج جدة | جميع الحقوق محفوظة.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 محل مساج جدة | جميع الحقوق محفوظة.</p>
+    </footer>
 </body>
 </html>
