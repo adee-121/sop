@@ -1,248 +1,114 @@
 
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا</title>
+    <title>ناصر فلاح المطيري - عقارات القصيم</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Arial", sans-serif;
+            line-height: 1.8;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
+            direction: rtl;
         }
         header {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background-color: #004080;
             color: white;
+            padding: 20px 10px;
             text-align: center;
-            padding: 2rem 1rem;
+            position: relative;
         }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin: 0.5rem 0;
+        header img {
+            width: 120px;
+            margin-top: 10px;
         }
         section {
-            padding: 2rem 1rem;
-            max-width: 1200px;
-            margin: auto;
-            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h2 {
+        section h1, section h2 {
+            color: #004080;
+        }
+        footer {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #333;
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
         }
-        .form-group {
-            margin-bottom: 1.5rem;
+
+        /* Buttons */
+        .options {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: #555;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        textarea {
-            height: 150px;
-            resize: none;
-        }
-        button {
-            display: block;
-            width: 100%;
-            padding: 0.8rem;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        .options a {
+            background-color: #004080;
             color: white;
-            border: none;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
             border-radius: 5px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
+            transition: 0.3s ease-in-out;
         }
-        button:hover {
-            background: linear-gradient(135deg, #2575fc, #6a11cb);
+        .options a:hover {
+            background-color: #0066cc;
+            transform: scale(1.1);
         }
-        .contact-info {
-            margin-top: 2rem;
-            text-align: center;
-            font-size: 1.2rem;
-            color: #666;
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        .contact-info i {
-            margin-right: 0.5rem;
-            color: #6a11cb;
+        .animated-section {
+            animation: fadeIn 1s ease-in-out;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>اتصل بنا</h1>
-    <p>نحن هنا لمساعدتك. تواصل معنا لأي استفسار أو طلب.</p>
-</header>
-
-<section>
-    <h2>نموذج الاتصال</h2>
-    <form>
-        <div class="form-group">
-            <label for="name">الاسم:</label>
-            <input type="text" id="name" placeholder="أدخل اسمك">
-        </div>
-        <div class="form-group">
-            <label for="email">البريد الإلكتروني:</label>
-            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني">
-        </div>
-        <div class="form-group">
-            <label for="message">الرسالة:</label>
-            <textarea id="message" placeholder="اكتب رسالتك هنا"></textarea>
-        </div>
-        <button type="submit">إرسال</button>
-    </form>
-    <div class="contact-info">
-        <p><i class="fa fa-phone"></i> الهاتف: 123-456-789</p>
-        <p><i class="fa fa-envelope"></i> البريد الإلكتروني: info@example.com</p>
-    </div>
-</section>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحات متحركة</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
-<body>
-    <!-- صفحة البداية -->
-    <section id="home" class="page animate__animated animate__fadeIn">
-        <h1>مرحبًا بك في موقعنا</h1>
-        <p>صفحات جذابة مع تأثيرات متحركة.</p>
-        <a href="#about" class="btn">اكتشف المزيد</a>
-    </section>
-
-    <!-- صفحة "من نحن" -->
-    <section id="about" class="page animate__animated animate__fadeInUp">
-        <h2>من نحن</h2>
-        <p>نحن نقدم أفضل الخدمات مع تصميمات جذابة تلبي احتياجاتك.</p>
-        <a href="#services" class="btn">خدماتنا</a>
-    </section>
-
-    <!-- صفحة "الخدمات" -->
-    <section id="services" class="page animate__animated animate__fadeInRight">
-        <h2>خدماتنا</h2>
+    <header>
+        <h1>ناصر فلاح المطيري</h1>
+        <p>بيع وشراء وتمليك العقارات - القصيم</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Vision2030-logo.svg" alt="شعار رؤية 2030">
+    </header>
+    <section class="animated-section">
+        <h1>نبذة عن ناصر فلاح المطيري</h1>
+        <p>
+            منذ البداية، انطلقت مؤسسة ناصر فلاح المطيري برؤية واضحة لتطوير سوق العقارات في منطقة القصيم. بدأنا كفريق صغير يهدف إلى تحقيق أحلام العملاء في التملك والاستثمار العقاري، ومع مرور الوقت، أصبحنا من الرواد في تقديم خدمات شاملة ومتكاملة تلبي احتياجات الأفراد والشركات.
+        </p>
+        <p>
+            نؤمن بأن الاستثمار في العقارات هو استثمار في المستقبل، ونسعى دائمًا لتعزيز النمو الاقتصادي في القصيم، بما يتماشى مع رؤية المملكة 2030. هدفنا هو توفير خدمات عقارية ذات جودة عالية تبني الثقة وتحقق الرضا لعملائنا.
+        </p>
+        <h2>لماذا تختارنا؟</h2>
         <ul>
-            <li>تصميم مواقع احترافية</li>
-            <li>تطوير تطبيقات ويب</li>
-            <li>تسويق رقمي</li>
+            <li>خبرة طويلة في مجال العقارات.</li>
+            <li>معرفة متعمقة بسوق العقارات في منطقة القصيم.</li>
+            <li>تقديم خدمات شاملة تشمل البيع، الشراء، والتمليك.</li>
+            <li>التزام بالرؤية الطموحة للمملكة 2030.</li>
         </ul>
-        <a href="#contact" class="btn">اتصل بنا</a>
+        <div class="options">
+            <a href="#services">خدماتنا</a>
+            <a href="#contact">تواصل معنا</a>
+            <a href="#vision2030">رؤية 2030</a>
+        </div>
     </section>
-
-    <!-- صفحة "اتصل بنا" -->
-    <section id="contact" class="page animate__animated animate__fadeInLeft">
-        <h2>اتصل بنا</h2>
-        <p>نحن هنا لمساعدتك. تواصل معنا الآن.</p>
-        <a href="#home" class="btn">العودة إلى البداية</a>
-    </section>
+    <footer>
+        <p>&copy; 2024 - جميع الحقوق محفوظة - ناصر فلاح المطيري</p>
+    </footer>
 </body>
 </html>
-/* التصميم العام */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background: #f4f4f9;
-    color: #333;
-}
-
-/* تصميم الصفحات */
-.page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    transition: all 0.3s ease-in-out;
-}
-
-/* ألوان الأقسام */
-#home {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
-}
-
-#about {
-    background: #f9f9f9;
-    color: #444;
-}
-
-#services {
-    background: #2575fc;
-    color: white;
-}
-
-#contact {
-    background: #6a11cb;
-    color: white;
-}
-
-/* الأزرار */
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 2rem;
-    background: #fff;
-    color: #2575fc;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: #2575fc;
-    color: #fff;
-    transform: scale(1.1);
-}
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-</head>
-<body>
-    <section id="about" class="page" data-aos="fade-up">
-        <h2>من نحن</h2>
-        <p>نحن نقدم أفضل الخدمات مع تصميمات جذابة.</p>
-    </section>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
