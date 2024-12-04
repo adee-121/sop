@@ -7,57 +7,63 @@
     <style>
         /* الأساسيات */
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
             background-color: #f9f5f0;
             color: #5a5a5a;
         }
-        header {
-            background-color: #e8d8c3;
-            color: #333;
-            text-align: center;
-            padding: 40px 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        a {
+            text-decoration: none;
+            color: inherit;
         }
-        header h1 {
+
+        /* رأسية الصفحة */
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x800');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
             font-size: 3em;
             margin: 0;
         }
-        header p {
+        .hero p {
             font-size: 1.2em;
-            margin: 10px 0 0;
+            margin: 20px 0;
         }
-        nav {
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+        .hero .cta {
+            background-color: #a67c52;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
         }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #5a5a5a;
-            font-size: 1.1em;
-            padding: 10px 15px;
-        }
-        nav ul li a:hover {
-            color: #a67c52;
-            border-bottom: 2px solid #a67c52;
+        .hero .cta:hover {
+            background-color: #7e5a39;
         }
 
-        /* الأقسام العامة */
+        /* أقسام */
         section {
             padding: 40px 20px;
             text-align: center;
@@ -67,20 +73,13 @@
             color: #a67c52;
             margin-bottom: 20px;
         }
-        section p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            margin: 0 auto;
-            max-width: 700px;
-        }
 
         /* الخدمات */
         .services {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
-            margin-top: 30px;
         }
         .service-card {
             background-color: #fff;
@@ -89,6 +88,10 @@
             padding: 20px;
             width: 300px;
             text-align: center;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
         }
         .service-card img {
             width: 100%;
@@ -98,11 +101,6 @@
         .service-card h3 {
             font-size: 1.5em;
             color: #a67c52;
-            margin: 10px 0;
-        }
-        .service-card p {
-            font-size: 1em;
-            color: #5a5a5a;
         }
 
         /* معرض الصور */
@@ -115,109 +113,65 @@
         .gallery img {
             width: 300px;
             border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s;
         }
         .gallery img:hover {
             transform: scale(1.1);
         }
 
-        /* قسم آراء العملاء */
-        .testimonials {
-            background-color: #e8d8c3;
-            color: #333;
-            padding: 40px 20px;
-        }
-        .testimonials .testimonial {
-            margin: 20px 0;
-            font-style: italic;
-        }
-        .testimonials .testimonial h3 {
-            margin-top: 10px;
-            font-size: 1.2em;
-            color: #a67c52;
-        }
-
-        /* قسم فريق العمل */
-        .team {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .team-member {
-            text-align: center;
-            width: 200px;
-        }
-        .team-member img {
-            width: 100%;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .team-member h4 {
-            margin: 5px 0 0;
-            color: #a67c52;
-        }
-
         /* الفوتر */
         footer {
-            background-color: #e8d8c3;
-            color: #333;
+            background-color: #a67c52;
+            color: #fff;
             text-align: center;
             padding: 20px;
             margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>محل مساج جدة</h1>
-    <p>الرفاهية تبدأ من هنا</p>
-</header>
+<!-- رأسية الصفحة -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>مرحبا بك في محل مساج جدة</h1>
+        <p>نقدم لك تجربة استرخاء فريدة من نوعها</p>
+        <a href="#contact" class="cta">احجز الآن</a>
+    </div>
+</section>
 
-<nav>
-    <ul>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#services">الخدمات</a></li>
-        <li><a href="#gallery">المعرض</a></li>
-        <li><a href="#testimonials">آراء العملاء</a></li>
-        <li><a href="#team">فريق العمل</a></li>
-        <li><a href="#contact">اتصل بنا</a></li>
-    </ul>
-</nav>
-
+<!-- من نحن -->
 <section id="about">
     <h2>من نحن</h2>
     <p>
-        نحن في محل مساج جدة نلتزم بتقديم تجربة استرخاء مميزة تجمع بين العناية بالجسد والهدوء النفسي.
-        مع فريق متخصص وأجواء مريحة، نحرص على أن تكون خدماتنا تجربة لا تُنسى.
+        نحن متخصصون في تقديم خدمات المساج والاسترخاء بأعلى جودة ومعايير. هدفنا هو تقديم تجربة مريحة ومميزة تعزز راحتك الجسدية والنفسية.
     </p>
 </section>
 
+<!-- الخدمات -->
 <section id="services">
     <h2>الخدمات</h2>
     <div class="services">
         <div class="service-card">
             <img src="https://via.placeholder.com/300x200" alt="مساج استرخائي">
             <h3>مساج استرخائي</h3>
-            <p>تجربة فريدة تمنحك الاسترخاء الكامل وتخفيف التوتر.</p>
+            <p>تخفيف التوتر واستعادة النشاط.</p>
         </div>
         <div class="service-card">
             <img src="https://via.placeholder.com/300x200" alt="مساج علاجي">
             <h3>مساج علاجي</h3>
-            <p>يعمل على تحسين الدورة الدموية وتخفيف الآلام المزمنة.</p>
+            <p>حلول متخصصة لتخفيف آلام الجسم.</p>
         </div>
         <div class="service-card">
             <img src="https://via.placeholder.com/300x200" alt="مساج رياضي">
             <h3>مساج رياضي</h3>
-            <p>مصمم خصيصًا للاعبي الرياضة لتخفيف آلام العضلات.</p>
+            <p>مصمم للاعبي الرياضة لتخفيف العضلات.</p>
         </div>
     </div>
 </section>
 
+<!-- معرض الصور -->
 <section id="gallery">
     <h2>معرض الصور</h2>
     <div class="gallery">
@@ -227,36 +181,7 @@
     </div>
 </section>
 
-<section id="testimonials">
-    <h2>آراء العملاء</h2>
-    <div class="testimonials">
-        <div class="testimonial">
-            <p>"خدمة ممتازة وأجواء رائعة! أشعر بالراحة بعد كل جلسة."</p>
-            <h3>- أحمد</h3>
-        </div>
-        <div class="testimonial">
-            <p>"أفضل محل مساج في جدة، فريق محترف وخدمة مميزة."</p>
-            <h3>- سارة</h3>
-        </div>
-    </div>
-</section>
-
-<section id="team">
-    <h2>فريق العمل</h2>
-    <div class="team">
-        <div class="team-member">
-            <img src="https://via.placeholder.com/150" alt="عضو الفريق">
-            <h4>أحمد</h4>
-            <p>متخصص في المساج العلاجي</p>
-        </div>
-        <div class="team-member">
-            <img src="https://via.placeholder.com/150" alt="عضو الفريق">
-            <h4>سارة</h4>
-            <p>خبيرة مساج استرخائي</p>
-        </div>
-    </div>
-</section>
-
+<!-- الفوتر -->
 <footer>
     <p>&copy; 2024 محل مساج جدة | جميع الحقوق محفوظة</p>
 </footer>
