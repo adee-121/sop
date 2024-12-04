@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>محل مساج جدة</title>
     <style>
+        /* الأساسيات */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -55,6 +56,8 @@
             color: #a67c52;
             border-bottom: 2px solid #a67c52;
         }
+
+        /* الأقسام العامة */
         section {
             padding: 40px 20px;
             text-align: center;
@@ -70,6 +73,8 @@
             margin: 0 auto;
             max-width: 700px;
         }
+
+        /* الخدمات */
         .services {
             display: flex;
             justify-content: center;
@@ -99,6 +104,61 @@
             font-size: 1em;
             color: #5a5a5a;
         }
+
+        /* معرض الصور */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* قسم آراء العملاء */
+        .testimonials {
+            background-color: #e8d8c3;
+            color: #333;
+            padding: 40px 20px;
+        }
+        .testimonials .testimonial {
+            margin: 20px 0;
+            font-style: italic;
+        }
+        .testimonials .testimonial h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #a67c52;
+        }
+
+        /* قسم فريق العمل */
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-member {
+            text-align: center;
+            width: 200px;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .team-member h4 {
+            margin: 5px 0 0;
+            color: #a67c52;
+        }
+
+        /* الفوتر */
         footer {
             background-color: #e8d8c3;
             color: #333;
@@ -122,6 +182,9 @@
     <ul>
         <li><a href="#about">من نحن</a></li>
         <li><a href="#services">الخدمات</a></li>
+        <li><a href="#gallery">المعرض</a></li>
+        <li><a href="#testimonials">آراء العملاء</a></li>
+        <li><a href="#team">فريق العمل</a></li>
         <li><a href="#contact">اتصل بنا</a></li>
     </ul>
 </nav>
@@ -151,6 +214,45 @@
             <img src="https://via.placeholder.com/300x200" alt="مساج رياضي">
             <h3>مساج رياضي</h3>
             <p>مصمم خصيصًا للاعبي الرياضة لتخفيف آلام العضلات.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>معرض الصور</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x200" alt="صورة 1">
+        <img src="https://via.placeholder.com/300x200" alt="صورة 2">
+        <img src="https://via.placeholder.com/300x200" alt="صورة 3">
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>آراء العملاء</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>"خدمة ممتازة وأجواء رائعة! أشعر بالراحة بعد كل جلسة."</p>
+            <h3>- أحمد</h3>
+        </div>
+        <div class="testimonial">
+            <p>"أفضل محل مساج في جدة، فريق محترف وخدمة مميزة."</p>
+            <h3>- سارة</h3>
+        </div>
+    </div>
+</section>
+
+<section id="team">
+    <h2>فريق العمل</h2>
+    <div class="team">
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="عضو الفريق">
+            <h4>أحمد</h4>
+            <p>متخصص في المساج العلاجي</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="عضو الفريق">
+            <h4>سارة</h4>
+            <p>خبيرة مساج استرخائي</p>
         </div>
     </div>
 </section>
